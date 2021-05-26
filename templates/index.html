@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block customcss %}
+<link rel="stylesheet" href="{{ url_for('static', filename='custom-style.css') }}">
+{% endblock customcss %}
+
+{% block content %}
+
+<h1>hello world 1</h1>
+<p>hola como estan todo, cenamos?</p>
+<button onClick="addNumber(4,6);">press me</button>
+
+{% endblock content %}
